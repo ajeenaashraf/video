@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Light grey background */
+  background: linear-gradient(45deg, #4a7eff, #3febff);
+  color: #333; /* Default text color */
+  overflow: auto; /* Prevent scrollbars */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: linear-gradient(45deg, #84fab0, #8fd3f4);
+  background-size: 100% 100%;
+  /*animation: gradientAnimation 10s ease infinite;*/
+}
+
+.content {
+  max-width: 30rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.header {
+  background: linear-gradient(to right, #84fab0, #8fd3f4);
+  color: #0f0f0fb2;
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+video {
+  width: auto;
+  border-radius: 0.5rem;
+  /*box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);*/
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+  margin-bottom: 1rem;
+}
+
+.logs {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.logs p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.logs details {
+  margin-top: 1rem;
+}
+
+.logs summary {
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.logs summary:hover {
+  background: linear-gradient(to right, #ff6e7f, #ffd076);
+}
+
+.logs p {
+  padding: 2px;
+  word-wrap: break-word;
+  color: #00fd00;
+  background-color: #000;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #548ca8;
+}
+
+.error {
+  color: #ff516b;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  background: linear-gradient(to bottom,#8fd3f4, #84fab0);
+  color: rgb(0, 0, 0);
+  padding: 1px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes gradientAnimation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
